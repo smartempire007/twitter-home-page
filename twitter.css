@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+nav.header-section .header {
+    display:flex;
+    gap: 36rem;
+    /* border-bottom: 1px solid darkslategrey; */
+}
+
+nav.header-section{
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.header img {
+    width: 2rem;
+    /* fill: dodgerblue; */
+}
+
+.header li {
+    text-decoration: none;
+    list-style: none;
+    margin: 15px;
+}
+
+section .wrapper {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.wrapper .daniel-clifford .dan-img img,
+.wrapper .jeanette-harmon .jean-img img, 
+.wrapper .jonathan-walters .jonat-img img,
+.wrapper .patrick-abrams .pat-img img, 
+.wrapper .kira-whittle .kira-img img{
+    border-radius: 50%;
+}
+
+.wrapper .daniel-clifford,
+.wrapper .jeanette-harmon,
+.wrapper .jonathan-walters,
+.wrapper .patrick-abrams,
+.wrapper .kira-whittle {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    gap: 3rem;
+    border-bottom: gray solid 1px;
+}
+
+footer.footer-section{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0px;
+}
+
+footer.footer-section ul{
+    display: flex;
+    background-color: white;
+    gap: 23rem;
+}
+
+footer.footer-section ul img{
+    width: 2rem;
+}
+
+footer.footer-section ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav.header-section .header {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+        /* border-bottom: 1px solid darkslategrey; */
+    }
+
+    .header li {
+        text-decoration: none;
+        list-style: none;
+        margin: 15px;
+    }
+
+    .wrapper .daniel-clifford,
+    .wrapper .jeanette-harmon,
+    .wrapper .jonathan-walters,
+    .wrapper .patrick-abrams,
+    .wrapper .kira-whittle {
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        gap: 1.5rem;
+        border-bottom: gray solid 1px;
+    }
+
+    
+    footer.footer-section ul {
+        display: flex;
+        background-color: white;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer.footer-section ul img {
+        width: 2rem;
+    }
+
+    footer.footer-section ul li {
+        text-decoration: none;
+        list-style: none;
+        margin: 15px;
+    }
+
+}
